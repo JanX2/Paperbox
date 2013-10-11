@@ -18,6 +18,9 @@
 		2A5F6FDD1808636B00ED0584 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5F6FBC1808636B00ED0584 /* Cocoa.framework */; };
 		2A5F6FE51808636B00ED0584 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F6FE31808636B00ED0584 /* InfoPlist.strings */; };
 		2A5F6FE71808636B00ED0584 /* PaperboxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F6FE61808636B00ED0584 /* PaperboxTests.m */; };
+		2A5F70351808927C00ED0584 /* DBPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F70341808927C00ED0584 /* DBPrefsWindowController.m */; };
+		2A5F7037180892E600ED0584 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F7036180892E600ED0584 /* Preferences.xib */; };
+		2A5F703C1808935000ED0584 /* AppPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F703B1808935000ED0584 /* AppPrefsWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,12 @@
 		2A5F6FE21808636B00ED0584 /* PaperboxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PaperboxTests-Info.plist"; sourceTree = "<group>"; };
 		2A5F6FE41808636B00ED0584 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2A5F6FE61808636B00ED0584 /* PaperboxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaperboxTests.m; sourceTree = "<group>"; };
+		2A5F70331808927C00ED0584 /* DBPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPrefsWindowController.h; sourceTree = "<group>"; };
+		2A5F70341808927C00ED0584 /* DBPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPrefsWindowController.m; sourceTree = "<group>"; };
+		2A5F7036180892E600ED0584 /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		2A5F703A1808935000ED0584 /* AppPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPrefsWindowController.h; sourceTree = "<group>"; };
+		2A5F703B1808935000ED0584 /* AppPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPrefsWindowController.m; sourceTree = "<group>"; };
+		2A5F703D18089BC900ED0584 /* Paperbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Paperbox.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +124,11 @@
 		2A5F6FC21808636B00ED0584 /* Paperbox */ = {
 			isa = PBXGroup;
 			children = (
+				2A5F703D18089BC900ED0584 /* Paperbox.entitlements */,
+				2A5F70321808925E00ED0584 /* Classes */,
 				2A5F6FCE1808636B00ED0584 /* AppDelegate.h */,
 				2A5F6FCF1808636B00ED0584 /* AppDelegate.m */,
-				2A5F6FD11808636B00ED0584 /* MainMenu.xib */,
+				2A5F7038180892F000ED0584 /* User interface */,
 				2A5F6FD41808636B00ED0584 /* Images.xcassets */,
 				2A5F6FC31808636B00ED0584 /* Supporting Files */,
 			);
@@ -152,6 +163,26 @@
 				2A5F6FE31808636B00ED0584 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A5F70321808925E00ED0584 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F70331808927C00ED0584 /* DBPrefsWindowController.h */,
+				2A5F70341808927C00ED0584 /* DBPrefsWindowController.m */,
+				2A5F703A1808935000ED0584 /* AppPrefsWindowController.h */,
+				2A5F703B1808935000ED0584 /* AppPrefsWindowController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		2A5F7038180892F000ED0584 /* User interface */ = {
+			isa = PBXGroup;
+			children = (
+				2A5F6FD11808636B00ED0584 /* MainMenu.xib */,
+				2A5F7036180892E600ED0584 /* Preferences.xib */,
+			);
+			name = "User interface";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +232,13 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Andrey M";
 				TargetAttributes = {
+					2A5F6FB81808636B00ED0584 = {
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
 					2A5F6FD91808636B00ED0584 = {
 						TestTargetID = 2A5F6FB81808636B00ED0584;
 					};
@@ -234,6 +272,7 @@
 				2A5F6FD51808636B00ED0584 /* Images.xcassets in Resources */,
 				2A5F6FCD1808636B00ED0584 /* Credits.rtf in Resources */,
 				2A5F6FD31808636B00ED0584 /* MainMenu.xib in Resources */,
+				2A5F7037180892E600ED0584 /* Preferences.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A5F70351808927C00ED0584 /* DBPrefsWindowController.m in Sources */,
 				2A5F6FD01808636B00ED0584 /* AppDelegate.m in Sources */,
+				2A5F703C1808935000ED0584 /* AppPrefsWindowController.m in Sources */,
 				2A5F6FC91808636B00ED0584 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Paperbox/Paperbox-Prefix.pch";
@@ -396,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Paperbox/Paperbox-Prefix.pch";
