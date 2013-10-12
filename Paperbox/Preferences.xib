@@ -34,6 +34,9 @@
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="wxP-92-1Fx" id="jUy-y2-rqv"/>
+                    </connections>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rq5-IL-2au">
                     <rect key="frame" x="17" y="32" width="77" height="17"/>
@@ -52,6 +55,9 @@
                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
+                    <connections>
+                        <outlet property="nextKeyView" destination="gNo-ok-Q0U" id="8uD-Jj-8R8"/>
+                    </connections>
                 </textField>
             </subviews>
         </customView>
@@ -67,6 +73,7 @@
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                     <connections>
+                        <action selector="checkForUpdates:" target="uxs-JT-2W2" id="rIZ-tL-rsP"/>
                         <outlet property="nextKeyView" destination="0jI-vk-Pqi" id="iSp-1s-fma"/>
                     </connections>
                 </button>
@@ -90,5 +97,6 @@
             </connections>
         </customView>
         <userDefaultsController representsSharedInstance="YES" id="PkC-RK-iN6"/>
+        <customObject id="uxs-JT-2W2" customClass="SUUpdater"/>
     </objects>
 </document>

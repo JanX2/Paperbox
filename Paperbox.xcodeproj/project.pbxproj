@@ -21,6 +21,9 @@
 		2A5F70351808927C00ED0584 /* DBPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F70341808927C00ED0584 /* DBPrefsWindowController.m */; };
 		2A5F7037180892E600ED0584 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A5F7036180892E600ED0584 /* Preferences.xib */; };
 		2A5F703C1808935000ED0584 /* AppPrefsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5F703B1808935000ED0584 /* AppPrefsWindowController.m */; };
+		2AFB0B091809430700FD15A7 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB0B081809430700FD15A7 /* Sparkle.framework */; };
+		2AFB0B0B1809438C00FD15A7 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFB0B081809430700FD15A7 /* Sparkle.framework */; };
+		2AFB0B0D1809451E00FD15A7 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 2AFB0B0C1809451E00FD15A7 /* dsa_pub.pem */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,19 @@
 			remoteInfo = Paperbox;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2AFB0B0A1809436A00FD15A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2AFB0B0B1809438C00FD15A7 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2A5F6FB91808636B00ED0584 /* Paperbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paperbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +75,8 @@
 		2A5F703A1808935000ED0584 /* AppPrefsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppPrefsWindowController.h; sourceTree = "<group>"; };
 		2A5F703B1808935000ED0584 /* AppPrefsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppPrefsWindowController.m; sourceTree = "<group>"; };
 		2A5F703D18089BC900ED0584 /* Paperbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Paperbox.entitlements; sourceTree = "<group>"; };
+		2AFB0B081809430700FD15A7 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		2AFB0B0C1809451E00FD15A7 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A5F6FBD1808636B00ED0584 /* Cocoa.framework in Frameworks */,
+				2AFB0B091809430700FD15A7 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +123,7 @@
 		2A5F6FBB1808636B00ED0584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AFB0B081809430700FD15A7 /* Sparkle.framework */,
 				2A5F6FBC1808636B00ED0584 /* Cocoa.framework */,
 				2A5F6FDB1808636B00ED0584 /* XCTest.framework */,
 				2A5F6FBE1808636B00ED0584 /* Other Frameworks */,
@@ -138,6 +158,7 @@
 		2A5F6FC31808636B00ED0584 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AFB0B0C1809451E00FD15A7 /* dsa_pub.pem */,
 				2A5F6FC41808636B00ED0584 /* Paperbox-Info.plist */,
 				2A5F6FC51808636B00ED0584 /* InfoPlist.strings */,
 				2A5F6FC81808636B00ED0584 /* main.m */,
@@ -195,6 +216,7 @@
 				2A5F6FB51808636B00ED0584 /* Sources */,
 				2A5F6FB61808636B00ED0584 /* Frameworks */,
 				2A5F6FB71808636B00ED0584 /* Resources */,
+				2AFB0B0A1809436A00FD15A7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -269,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A5F6FC71808636B00ED0584 /* InfoPlist.strings in Resources */,
+				2AFB0B0D1809451E00FD15A7 /* dsa_pub.pem in Resources */,
 				2A5F6FD51808636B00ED0584 /* Images.xcassets in Resources */,
 				2A5F6FCD1808636B00ED0584 /* Credits.rtf in Resources */,
 				2A5F6FD31808636B00ED0584 /* MainMenu.xib in Resources */,
@@ -426,6 +449,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/meamka/Documents/xcode/Paperbox,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Paperbox/Paperbox-Prefix.pch";
 				INFOPLIST_FILE = "Paperbox/Paperbox-Info.plist";
@@ -440,6 +467,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/meamka/Documents/xcode/Paperbox,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Paperbox/Paperbox-Prefix.pch";
 				INFOPLIST_FILE = "Paperbox/Paperbox-Info.plist";

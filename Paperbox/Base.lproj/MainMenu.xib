@@ -31,6 +31,15 @@
                                     <action selector="openPreferences" target="494" id="Ep7-7g-6hr"/>
                                 </connections>
                             </menuItem>
+                            <menuItem isSeparatorItem="YES" id="DAk-uT-uHg">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Check For Updates…" id="D69-kZ-4aU">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="checkForUpdates:" target="FuY-Zs-aaW" id="7O2-La-nld"/>
+                                </connections>
+                            </menuItem>
                             <menuItem isSeparatorItem="YES" id="143">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
@@ -667,5 +676,6 @@
             </connections>
         </customObject>
         <customObject id="420" customClass="NSFontManager"/>
+        <customObject id="FuY-Zs-aaW" customClass="SUUpdater"/>
     </objects>
 </document>
