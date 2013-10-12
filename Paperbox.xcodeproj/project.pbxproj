@@ -24,6 +24,12 @@
 		2AFB0B091809430700FD15A7 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB0B081809430700FD15A7 /* Sparkle.framework */; };
 		2AFB0B0B1809438C00FD15A7 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFB0B081809430700FD15A7 /* Sparkle.framework */; };
 		2AFB0B0D1809451E00FD15A7 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 2AFB0B0C1809451E00FD15A7 /* dsa_pub.pem */; };
+		2AFB0B881809577E00FD15A7 /* OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB0B621809573200FD15A7 /* OctoKit.framework */; };
+		2AFB0B891809579200FD15A7 /* OctoKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFB0B621809573200FD15A7 /* OctoKit.framework */; };
+		2AFB0B8B180957A300FD15A7 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB0B8A180957A300FD15A7 /* ReactiveCocoa.framework */; };
+		2AFB0B8C180957A800FD15A7 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFB0B8A180957A300FD15A7 /* ReactiveCocoa.framework */; };
+		2AFB0B90180957BD00FD15A7 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AFB0B8F180957BD00FD15A7 /* Mantle.framework */; };
+		2AFB0B91180957C300FD15A7 /* Mantle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2AFB0B8F180957BD00FD15A7 /* Mantle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,111 @@
 			remoteGlobalIDString = 2A5F6FB81808636B00ED0584;
 			remoteInfo = Paperbox;
 		};
+		2AFB0B611809573200FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0B4F1809573100FD15A7 /* OctoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0871EA8169E2EFC00016ACA;
+			remoteInfo = "OctoKit Mac";
+		};
+		2AFB0B631809573200FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0B4F1809573100FD15A7 /* OctoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0871EC0169E2EFC00016ACA;
+			remoteInfo = "OctoKit Mac Tests";
+		};
+		2AFB0B651809573200FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0B4F1809573100FD15A7 /* OctoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0871FE4169E309900016ACA;
+			remoteInfo = "OctoKit iOS";
+		};
+		2AFB0B671809573200FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0B4F1809573100FD15A7 /* OctoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0871FF3169E309A00016ACA;
+			remoteInfo = "OctoKit iOS Tests";
+		};
+		2AFB0B991809580A00FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0B921809580A00FD15A7 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC3C15F72B23004E8054;
+			remoteInfo = "Mantle Mac";
+		};
+		2AFB0B9B1809580A00FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0B921809580A00FD15A7 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC5415F72B23004E8054;
+			remoteInfo = "Mantle Mac Tests";
+		};
+		2AFB0B9D1809580A00FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0B921809580A00FD15A7 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC7915F72BC7004E8054;
+			remoteInfo = "Mantle iOS";
+		};
+		2AFB0B9F1809580A00FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0B921809580A00FD15A7 /* Mantle.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D042FC8715F72BC7004E8054;
+			remoteInfo = "Mantle iOS Tests";
+		};
+		2AFB0BAB1809581400FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88037F8315056328001A5B19;
+			remoteInfo = ReactiveCocoa;
+		};
+		2AFB0BAD1809581400FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88F440AB153DAC820097B4C3;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		2AFB0BAF1809581400FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 88CDF7DC15000FCF00163A9F;
+			remoteInfo = ReactiveCocoaTests;
+		};
+		2AFB0BB11809581400FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5FAF5223174D4C2000CAC810;
+			remoteInfo = "ReactiveCocoaTests-iOS";
+		};
+		2AFB0BB31809581400FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1860F412177C91B500C7B3C9;
+			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHost";
+		};
+		2AFB0BB51809581400FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1860F430177C91B500C7B3C9;
+			remoteInfo = "ReactiveCocoa-iOS-UIKitTestHostTests";
+		};
+		2AFB0BB71809581400FD15A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D05AD39417F2D56F0080895B;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +154,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2AFB0B91180957C300FD15A7 /* Mantle.framework in CopyFiles */,
+				2AFB0B8C180957A800FD15A7 /* ReactiveCocoa.framework in CopyFiles */,
+				2AFB0B891809579200FD15A7 /* OctoKit.framework in CopyFiles */,
 				2AFB0B0B1809438C00FD15A7 /* Sparkle.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +191,11 @@
 		2A5F703D18089BC900ED0584 /* Paperbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Paperbox.entitlements; sourceTree = "<group>"; };
 		2AFB0B081809430700FD15A7 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		2AFB0B0C1809451E00FD15A7 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		2AFB0B4F1809573100FD15A7 /* OctoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OctoKit.xcodeproj; path = octokit.objc/OctoKit.xcodeproj; sourceTree = "<group>"; };
+		2AFB0B8A180957A300FD15A7 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../../Library/Developer/Xcode/DerivedData/OctoKit-gbdxgvxgjyelprfatjycvwqfxnow/Build/Products/Debug/ReactiveCocoa.framework"; sourceTree = "<group>"; };
+		2AFB0B8F180957BD00FD15A7 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = "../../../Library/Developer/Xcode/DerivedData/OctoKit-gbdxgvxgjyelprfatjycvwqfxnow/Build/Products/Debug/Mantle.framework"; sourceTree = "<group>"; };
+		2AFB0B921809580A00FD15A7 /* Mantle.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Mantle.xcodeproj; path = octokit.objc/External/Mantle/Mantle.xcodeproj; sourceTree = "<group>"; };
+		2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = octokit.objc/External/ReactiveCocoa/ReactiveCocoaFramework/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +203,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AFB0B90180957BD00FD15A7 /* Mantle.framework in Frameworks */,
+				2AFB0B8B180957A300FD15A7 /* ReactiveCocoa.framework in Frameworks */,
+				2AFB0B881809577E00FD15A7 /* OctoKit.framework in Frameworks */,
 				2A5F6FBD1808636B00ED0584 /* Cocoa.framework in Frameworks */,
 				2AFB0B091809430700FD15A7 /* Sparkle.framework in Frameworks */,
 			);
@@ -104,6 +226,9 @@
 		2A5F6FB01808636B00ED0584 = {
 			isa = PBXGroup;
 			children = (
+				2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */,
+				2AFB0B921809580A00FD15A7 /* Mantle.xcodeproj */,
+				2AFB0B4F1809573100FD15A7 /* OctoKit.xcodeproj */,
 				2A5F6FC21808636B00ED0584 /* Paperbox */,
 				2A5F6FE01808636B00ED0584 /* PaperboxTests */,
 				2A5F6FBB1808636B00ED0584 /* Frameworks */,
@@ -123,6 +248,8 @@
 		2A5F6FBB1808636B00ED0584 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AFB0B8F180957BD00FD15A7 /* Mantle.framework */,
+				2AFB0B8A180957A300FD15A7 /* ReactiveCocoa.framework */,
 				2AFB0B081809430700FD15A7 /* Sparkle.framework */,
 				2A5F6FBC1808636B00ED0584 /* Cocoa.framework */,
 				2A5F6FDB1808636B00ED0584 /* XCTest.framework */,
@@ -206,6 +333,42 @@
 			name = "User interface";
 			sourceTree = "<group>";
 		};
+		2AFB0B501809573100FD15A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AFB0B621809573200FD15A7 /* OctoKit.framework */,
+				2AFB0B641809573200FD15A7 /* OctoKit Mac Tests.octest */,
+				2AFB0B661809573200FD15A7 /* libOctoKit.a */,
+				2AFB0B681809573200FD15A7 /* OctoKit iOS Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AFB0B931809580A00FD15A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AFB0B9A1809580A00FD15A7 /* Mantle.framework */,
+				2AFB0B9C1809580A00FD15A7 /* Mantle Mac Tests.octest */,
+				2AFB0B9E1809580A00FD15A7 /* libMantle.a */,
+				2AFB0BA01809580A00FD15A7 /* Mantle iOS Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AFB0BA21809581400FD15A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AFB0BAC1809581400FD15A7 /* ReactiveCocoa.framework */,
+				2AFB0BAE1809581400FD15A7 /* libReactiveCocoa-iOS.a */,
+				2AFB0BB01809581400FD15A7 /* ReactiveCocoaTests.octest */,
+				2AFB0BB21809581400FD15A7 /* ReactiveCocoaTests-iOS.octest */,
+				2AFB0BB41809581400FD15A7 /* ReactiveCocoa-iOS-UIKitTestHost.app */,
+				2AFB0BB61809581400FD15A7 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */,
+				2AFB0BB81809581400FD15A7 /* libReactiveCocoa-Mac.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,6 +440,20 @@
 			mainGroup = 2A5F6FB01808636B00ED0584;
 			productRefGroup = 2A5F6FBA1808636B00ED0584 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2AFB0B931809580A00FD15A7 /* Products */;
+					ProjectRef = 2AFB0B921809580A00FD15A7 /* Mantle.xcodeproj */;
+				},
+				{
+					ProductGroup = 2AFB0B501809573100FD15A7 /* Products */;
+					ProjectRef = 2AFB0B4F1809573100FD15A7 /* OctoKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 2AFB0BA21809581400FD15A7 /* Products */;
+					ProjectRef = 2AFB0BA11809581400FD15A7 /* ReactiveCocoa.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2A5F6FB81808636B00ED0584 /* Paperbox */,
@@ -284,6 +461,114 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2AFB0B621809573200FD15A7 /* OctoKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OctoKit.framework;
+			remoteRef = 2AFB0B611809573200FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0B641809573200FD15A7 /* OctoKit Mac Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OctoKit Mac Tests.octest";
+			remoteRef = 2AFB0B631809573200FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0B661809573200FD15A7 /* libOctoKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOctoKit.a;
+			remoteRef = 2AFB0B651809573200FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0B681809573200FD15A7 /* OctoKit iOS Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "OctoKit iOS Tests.octest";
+			remoteRef = 2AFB0B671809573200FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0B9A1809580A00FD15A7 /* Mantle.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Mantle.framework;
+			remoteRef = 2AFB0B991809580A00FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0B9C1809580A00FD15A7 /* Mantle Mac Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mantle Mac Tests.octest";
+			remoteRef = 2AFB0B9B1809580A00FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0B9E1809580A00FD15A7 /* libMantle.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMantle.a;
+			remoteRef = 2AFB0B9D1809580A00FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0BA01809580A00FD15A7 /* Mantle iOS Tests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Mantle iOS Tests.octest";
+			remoteRef = 2AFB0B9F1809580A00FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0BAC1809581400FD15A7 /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = 2AFB0BAB1809581400FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0BAE1809581400FD15A7 /* libReactiveCocoa-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-iOS.a";
+			remoteRef = 2AFB0BAD1809581400FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0BB01809581400FD15A7 /* ReactiveCocoaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.octest;
+			remoteRef = 2AFB0BAF1809581400FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0BB21809581400FD15A7 /* ReactiveCocoaTests-iOS.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoaTests-iOS.octest";
+			remoteRef = 2AFB0BB11809581400FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0BB41809581400FD15A7 /* ReactiveCocoa-iOS-UIKitTestHost.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "ReactiveCocoa-iOS-UIKitTestHost.app";
+			remoteRef = 2AFB0BB31809581400FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0BB61809581400FD15A7 /* ReactiveCocoa-iOS-UIKitTestHostTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "ReactiveCocoa-iOS-UIKitTestHostTests.octest";
+			remoteRef = 2AFB0BB51809581400FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2AFB0BB81809581400FD15A7 /* libReactiveCocoa-Mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libReactiveCocoa-Mac.a";
+			remoteRef = 2AFB0BB71809581400FD15A7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2A5F6FB71808636B00ED0584 /* Resources */ = {
@@ -452,6 +737,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/meamka/Documents/xcode/Paperbox,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OctoKit-gbdxgvxgjyelprfatjycvwqfxnow/Build/Products/Debug",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Paperbox/Paperbox-Prefix.pch";
@@ -470,6 +756,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/meamka/Documents/xcode/Paperbox,
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/OctoKit-gbdxgvxgjyelprfatjycvwqfxnow/Build/Products/Debug",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Paperbox/Paperbox-Prefix.pch";

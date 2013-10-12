@@ -88,6 +88,7 @@
                         </connections>
                     </buttonCell>
                     <connections>
+                        <binding destination="uxs-JT-2W2" name="value" keyPath="automaticallyChecksForUpdates" id="sgO-jO-cfD"/>
                         <outlet property="nextKeyView" destination="6j8-3M-370" id="yNV-ab-bWF"/>
                     </connections>
                 </button>
